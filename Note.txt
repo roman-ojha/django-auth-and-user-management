@@ -80,3 +80,7 @@
     -> and on myApp/urls.py add:
         -> path('home',views.home,name="home"),
         -> because we want to render same home page when we will redirect to url '/home'
+
+*) Create User Account:
+    -> now we will create 'sing_up.html' file inside 'myApp/templates/registration' and write required code
+    -> after that we will create views for that
