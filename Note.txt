@@ -77,3 +77,6 @@
             -> this is where we want to redirect after user get logged in
         -> LOGOUT_REDIRECT_URL='/login'
             -> when user logout we want to redirect url to 'login'
+    -> and on myApp/urls.py add:
+        -> path('home',views.home,name="home"),
+        -> because we want to render same home page when we will redirect to url '/home'
