@@ -85,3 +85,25 @@
     -> now we will create 'sing_up.html' file inside 'myApp/templates/registration' and write required code
     -> after that we will create views 'sign_up' inside 'views.py'
     -> now we will create or extend the default django user form using 'myApp/forms.py'
+    -> after we create user we can now go to retools and query user to see is create user exist or not:
+        -> first create new resources for the same database and then query:
+            -> select * from auth_user
+    -> if now we will logout by going to '/logout' url we will ge able to logout successfully
+    -> and again if we will login we will be able to login through that user
+
+
+*) Now we will write a logic for login and logout button on home page inside 'base.html':
+    ->  <div>
+          <ul class="navbar-nav">
+            {% if user.is_authenticated %}
+            <span class="navbar-text">Logged in as {{user.username}} | </span>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
