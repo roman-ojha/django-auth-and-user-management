@@ -83,4 +83,5 @@
 
 *) Create User Account:
     -> now we will create 'sing_up.html' file inside 'myApp/templates/registration' and write required code
-    -> after that we will create views for that
+    -> after that we will create views 'sign_up' inside 'views.py'
+    -> now we will create or extend the default django user form using 'myApp/forms.py'
